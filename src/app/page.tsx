@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Footer from '../components/Footer';
 import IntroCard from '../components/IntroCard';
 import BehindLens from "@/components/BehindLens";
+import FezSection from "@/components/FezSection"
 
 export default function Home(){
   return(
@@ -11,6 +12,7 @@ export default function Home(){
     <Header/>
     <IntroCard/>
     <BehindLens/>
+    <FezSection/>
     <Footer/>
   </div>
   )
