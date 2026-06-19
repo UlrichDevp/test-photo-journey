@@ -5,6 +5,8 @@ import Footer from '../components/Footer';
 import IntroCard from '../components/IntroCard';
 import BehindLens from "@/components/BehindLens";
 import FezSection from "@/components/FezSection"
+import Marrakech from "@/components/MarrakechSection";
+import InstaCard from "@/components/InstagramCards"
 
 export default function Home(){
   return(
@@ -13,6 +15,8 @@ export default function Home(){
     <IntroCard/>
     <BehindLens/>
     <FezSection/>
+    <Marrakech/>
+    <InstaCard/>
     <Footer/>
   </div>
   )
