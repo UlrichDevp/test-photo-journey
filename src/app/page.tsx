@@ -1,7 +1,7 @@
 'use client';
 import Header from "@/components/Header";
 // import Hero from "@/components/Hero";
-import Footer from '../components/Footer';
+import Footer1 from '../components/Footer1';
 import IntroCard from '../components/IntroCard';
 import BehindLens from "@/components/BehindLens";
 import FezSection from "@/components/FezSection"
@@ -19,7 +19,7 @@ export default function Home() {
       <Marrakech />
       <InstaCard />
       <ClosingSection />
-      <Footer />
+      <Footer1 />
 
     </div>
   )
