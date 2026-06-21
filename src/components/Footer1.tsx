@@ -5,17 +5,17 @@ import { useState, useRef, useEffect } from "react";
 
 
 const languages = [
-  { code: "en", label: "English", flag: "🇬🇧" },
-  { code: "fr", label: "Français", flag: "🇫🇷" },
+    { code: "en", label: "English", flag: "🇬🇧" },
+    { code: "fr", label: "Français", flag: "🇫🇷" },
 ];
 const ChevronDown = ({ open }: { open: boolean }) => (
-  <svg
-    width="14" height="14" viewBox="0 0 24 24" fill="none"
-    stroke="currentColor" strokeWidth="2"
-    style={{ transform: open ? "rotate(180deg)" : "rotate(0deg)", transition: "transform 0.2s ease" }}
-  >
-    <path d="M6 9l6 6 6-6" />
-  </svg>
+    <svg
+        width="14" height="14" viewBox="0 0 24 24" fill="none"
+        stroke="currentColor" strokeWidth="2"
+        style={{ transform: open ? "rotate(180deg)" : "rotate(0deg)", transition: "transform 0.2s ease" }}
+    >
+        <path d="M6 9l6 6 6-6" />
+    </svg>
 );
 
 function Newsletter() {
@@ -65,57 +65,62 @@ function Newsletter() {
     );
 }
 function LanguageSelector() {
-  const [open, setOpen] = useState(false);
-  const [selected, setSelected] = useState(languages[0]);
-  const ref = useRef<HTMLDivElement>(null);
+    const [open, setOpen] = useState(false);
+    const [selected, setSelected] = useState(languages[0]);
+    const ref = useRef<HTMLDivElement>(null);
 
-  useEffect(() => {
-    const handler = (e: MouseEvent) => {
-      if (ref.current && !ref.current.contains(e.target as Node)) setOpen(false);
-    };
-    document.addEventListener("mousedown", handler);
-    return () => document.removeEventListener("mousedown", handler);
-  }, []);
+    useEffect(() => {
+        const handler = (e: MouseEvent) => {
+            if (ref.current && !ref.current.contains(e.target as Node)) setOpen(false);
+        };
+        document.addEventListener("mousedown", handler);
+        return () => document.removeEventListener("mousedown", handler);
+    }, []);
 
-  return (
-    <div ref={ref} className="relative text-[#FFFFFF99]">
-      <button
-        onClick={() => setOpen((o) => !o)}
-        className="flex items-center gap-2 border border-white/25 rounded-full px-4 py-2 hover:border-white/45 transition-colors duration-200">
-        <span>{selected.flag}</span>
-        <span>{selected.label}</span>
-        <ChevronDown open={open} />
-      </button>
-
-      {open && (
-        <div
-          className="absolute bottom-full mb-2 left-0 min-w-full rounded-xl overflow-hidden z-50"
-          style={{ background: "rgba(30,32,48,0.97)", border: "1px solid rgba(255,255,255,0.12)" }}
-        >
-          {languages.map((lang) => (
+    return (
+        <div ref={ref} className="relative text-[#FFFFFF99]">
             <button
-              key={lang.code}
-              onClick={() => { setSelected(lang); setOpen(false); }}
-              className="w-full flex items-center gap-3 px-4 py-3 hover:bg-white/10 transition-colors duration-150 text-left">
-              <span>{lang.flag}</span>
-              <span>{lang.label}</span>
-              {selected.code === lang.code && (
-                <svg className="ml-auto" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-                  <path d="M5 13l4 4L19 7" />
-                </svg>
-              )}
+                onClick={() => setOpen((o) => !o)}
+                className="text-[12px] w-[120px] h-[40px] flex items-center justify-center gap-2 border border-[#FFFFFF80] rounded-[100px]  hover:border-white/45 transition-colors duration-200">
+                <span className="text-[20px] rounded-[100px]">{selected.flag}</span>
+                <span>{selected.label}</span>
+                <ChevronDown open={open} />
             </button>
-          ))}
+
+            {open && (
+                <div
+                    className="absolute bottom-full mb-2 left-0 min-w-full rounded-xl overflow-hidden z-50"
+                    style={{ background: "rgba(30,32,48,0.97)", border: "1px solid rgba(255,255,255,0.12)" }}
+                >
+                    {languages.map((lang) => (
+                        <button
+                            key={lang.code}
+                            onClick={() => { setSelected(lang); setOpen(false); }}
+                            className="w-full text-[12px] flex items-center gap-3 px-4 py-3 hover:bg-white/10 transition-colors duration-150 text-left">
+                            <span>{lang.flag}</span>
+                            <span>{lang.label}</span>
+                            {selected.code === lang.code && (
+                                <svg className="ml-auto" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                                    <path d="M5 13l4 4L19 7" />
+                                </svg>
+                            )}
+                        </button>
+                    ))}
+                </div>
+            )}
         </div>
-      )}
-    </div>
-  );
+    );
 }
 
 
 export default function Footer1() {
     return (
-        <footer className="mt-[106.14px] pt-[63px] md:pt-[106px] lg:[146px] px-[22px]  md:px-[68px] w-full bg-gray-800"
+        <footer className="mt-[106.14px] pt-[63px] md:pt-[106px] lg:[146px] px-[22px]  md:px-[68px] w-full "
+            style={{
+                background:
+                    "linear-gradient(310.6deg, #000000 28.25%, #8E97B4 87.82%), linear-gradient(0deg, rgba(0,0,0,0.2), rgba(0,0,0,0.2))",
+                backgroundBlendMode: "normal",
+            }}
 
         >
             <div className="flex">
