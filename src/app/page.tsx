@@ -1,6 +1,6 @@
 'use client';
 import Header from "@/components/Header";
-// import Hero from "@/components/Hero";
+import Hero from "@/components/Hero";
 import Footer1 from '../components/Footer1';
 import IntroCard from '../components/IntroCard';
 import BehindLens from "@/components/BehindLens";
@@ -13,6 +13,7 @@ export default function Home() {
   return (
     <div>
       <Header />
+      <Hero/>
       <IntroCard />
       <BehindLens />
       <FezSection />
