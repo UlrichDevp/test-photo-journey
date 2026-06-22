@@ -2,7 +2,7 @@
 
 export default function IntroCard() {
   return (
-    <section className="mx-4 md:mx-[39px] lg:mx-[236px] mt-8 px-[23px] md:px-[83px] lg:px-[145px] pt-[81px] md:pt-[100px] lg:pt-[44px] pb-[47px] md:pb-[77px] lg:pb-[44px] gap-[20px] lg:gap-[24px] rounded-[230px] md:rounded-[600px] flex flex-col items-center bg-gradient-to-r from-[#8F9CD3] to-[#FFCAA4] shadow-[0_4.15px_9.23px_0_#E0E0E01A,0_17.07px_17.07px_0_#E0E0E017,0_37.84px_22.61px_0_#E0E0E00D,0_67.37px_27.22px_0_#E0E0E003,0_105.67px_29.53px_0_#E0E0E000]">
+    <section className="mx-4 md:mx-[39px] lg:mx-[236px] mt-[85.42px] md:mt-[74px] lg:mt-[169px] px-[23px] md:px-[83px] lg:px-[145px] pt-[81px] md:pt-[100px] lg:pt-[44px] pb-[47px] md:pb-[77px] lg:pb-[44px] gap-[20px] lg:gap-[24px] rounded-[230px] md:rounded-[600px] flex flex-col items-center bg-gradient-to-r from-[#8F9CD3] to-[#FFCAA4] shadow-[0_4.15px_9.23px_0_#E0E0E01A,0_17.07px_17.07px_0_#E0E0E017,0_37.84px_22.61px_0_#E0E0E00D,0_67.37px_27.22px_0_#E0E0E003,0_105.67px_29.53px_0_#E0E0E000]">
         <h1 className="font-title px-[5px] md:px-[34px] lg:px-[12px] text-[30px] md:text-[40px] lg:text-[45px] leading-[37px] md:leading-[50px] text-center font-[400] text-white">
             Before You Shoot: A Quick Morocco Photography Mindset
         </h1>
