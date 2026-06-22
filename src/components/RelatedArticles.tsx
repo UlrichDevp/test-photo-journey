@@ -31,88 +31,41 @@ export default function RelatedArticles() {
     [emblaApi]
   );
 
-  const onSelect = useCallback(() => {
+  useEffect(() => {
     if (!emblaApi) return;
 
-    setSelectedIndex(emblaApi.selectedScrollSnap());
+    const updateSelectedIndex = () => {
+      setSelectedIndex(emblaApi.selectedScrollSnap());
+    };
+
+    updateSelectedIndex();
+    emblaApi.on("select", updateSelectedIndex);
+
+    return () => {
+      emblaApi.off("select", updateSelectedIndex);
+    };
   }, [emblaApi]);
 
-  useEffect(() => {
-  if (!emblaApi) return;
-
-  const updateSelectedIndex = () => {
-    setSelectedIndex(emblaApi.selectedScrollSnap());
-  };
-
-  updateSelectedIndex();
-
-  emblaApi.on("select", updateSelectedIndex);
-
-  return () => {
-    emblaApi.off("select", updateSelectedIndex);
-  };
-}, [emblaApi]);
-
   return (
-    <section
-      data-testid="related-articles"
-      className="
-        mx-auto
-        w-full
-        max-w-[1440px]
-        overflow-hidden
-        px-4
-        pt-[104px]
-        md:pt-[113px]
-        lg:pt-[131px]
-        md:px-10
-        lg:px-[72px]
-      "
-    >
-      <h2
-        className="
-          mb-16
-          text-center
-          font-title
-          text-[26.67px]
-          md:text-[40px]
-          lg:text-[48px]
-        "
-      >
+    <section data-testid="related-articles" className="mx-auto w-full max-w-[1440px] overflow-hidden px-4 pt-[104px] md:px-10 md:pt-[113px] lg:px-[72px] lg:pt-[131px]">
+      <h2 className="mb-16 text-center font-title text-[26.67px] md:text-[40px] lg:text-[48px]">
         Related Articles
       </h2>
 
       <div className="group relative">
-        <CarouselButtons
-          onPrevious={scrollPrev}
-          onNext={scrollNext}
-        />
+        <CarouselButtons onPrevious={scrollPrev} onNext={scrollNext} />
 
-        <div
-          ref={emblaRef}
-          className="overflow-hidden"
-        >
+        <div ref={emblaRef} className="overflow-hidden">
           <div className="flex gap-8">
             {articles.map((article) => (
-              <div
-                key={article.id}
-                className="
-                  flex-[0_0_100%]
-                  md:flex-[0_0_calc(50%-16px)]
-                  lg:flex-[0_0_calc(33.333%-22px)]
-                "
-              >
+              <div key={article.id} className="flex-[0_0_100%] md:flex-[0_0_calc(50%-16px)] lg:flex-[0_0_calc(33.333%-22px)]">
                 <ArticleCard article={article} />
               </div>
             ))}
           </div>
         </div>
 
-        <CarouselDots
-          total={articles.length}
-          current={selectedIndex}
-          onSelect={scrollTo}
-        />
+        <CarouselDots total={articles.length} current={selectedIndex} onSelect={scrollTo} />
       </div>
     </section>
   );

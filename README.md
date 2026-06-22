@@ -1,57 +1,73 @@
-# Frontend Technical Test - Yaakyi
+# Frontend Technical Test — Yaakyi
 
 Implementation of the frontend technical assessment provided by Yaakyi.
 
+---
+
 ## Overview
 
-This project reproduces the provided Figma design using modern frontend technologies while focusing on:
+This project reproduces the provided Figma design using modern frontend technologies, with a focus on:
 
-* Pixel-perfect implementation
-* Responsive design
-* Component reusability
-* Code maintainability
-* Automated visual and end-to-end testing
+- Pixel-perfect implementation
+- Responsive design (mobile, tablet, desktop)
+- Component reusability
+- Code maintainability
+- Automated visual and end-to-end testing
+
+---
 
 ## Tech Stack
 
-* Next.js (App Router)
-* React
-* TypeScript
-* TailwindCSS
-* BackstopJS
-* Playwright
+- **Next.js** (App Router)
+- **React**
+- **TypeScript**
+- **TailwindCSS**
+- **BackstopJS**
+- **Playwright**
+
+---
 
 ## Features
 
-* Pixel-perfect implementation based on the provided Figma design
-* Responsive layouts for:
+- Pixel-perfect implementation based on the provided Figma design
+- Fully responsive layouts: Mobile, Tablet, Desktop
+- Reusable and modular components
+- Visual regression testing with BackstopJS
+- End-to-end testing with Playwright (Chromium, Firefox, WebKit)
 
-  * Mobile
-  * Tablet
-  * Desktop
-* Reusable and maintainable components
-* Automated visual regression testing with BackstopJS
-* End-to-end testing with Playwright
+---
 
 ## Installation
 
-Install dependencies:
+Clone the repository and install dependencies:
 
 ```bash
 npm install
 ```
 
-## Run the development server
+> ⚠️ **Important — Required for BackstopJS**
+>
+> On a fresh machine, install the browser required by Puppeteer (used by BackstopJS):
+>
+> ```bash
+> npx puppeteer browsers install chrome
+> ```
+>
+> This step is required to avoid Chrome launch errors on CI or new environments.
+
+---
+
+## Development
+
+Start the development server:
 
 ```bash
 npm run dev
 ```
 
-Application available at:
+The application is available at: [http://localhost:3000](http://localhost:3000)
 
-```bash
-http://localhost:3000
-```
+---
 
 ## Production Build
 
@@ -61,98 +77,137 @@ Create a production build:
 npm run build
 ```
 
-Run production server:
+Start the production server:
 
 ```bash
 npm start
 ```
 
-## Visual Regression Testing (BackstopJS)
+---
 
-Generate reference screenshots:
+## Visual Regression Testing — BackstopJS
+
+> ⚠️ Make sure the dev server is running before executing these commands.
+
+**Generate reference screenshots:**
 
 ```bash
 npm run backstop:reference
 ```
 
-Run visual regression tests:
+**Run visual regression tests:**
 
 ```bash
 npm run backstop:test
 ```
 
-Update visual references:
+**Approve intentional UI changes:**
 
 ```bash
 npx backstop approve
 ```
 
-## End-to-End Testing (Playwright)
+---
 
-Run all E2E tests:
+## End-to-End Testing — Playwright
+
+**Run all E2E tests:**
 
 ```bash
 npm run test:e2e
 ```
 
-Open interactive Playwright UI:
+**Open interactive UI mode:**
 
 ```bash
 npm run test:e2e:ui
 ```
 
-Open the HTML report:
+**Open the HTML report:**
 
 ```bash
 npx playwright show-report
 ```
 
+---
+
 ## Test Coverage
 
-### BackstopJS
+### BackstopJS — Visual Regression
 
-Visual regression tests cover:
+Viewports covered:
 
-* Mobile viewport
-* Tablet viewport
-* Desktop viewport
+- Mobile
+- Tablet
+- Desktop
 
-### Playwright
+### Playwright — E2E Tests
 
-E2E tests validate:
+Tests cover:
 
-* Homepage accessibility
-* Header rendering
-* Main sections rendering
-* Footer rendering
-* Page scrolling behavior
+- Homepage load
+- Header visibility
+- All main sections rendering
+- Footer visibility
+- Scroll behavior
 
-Tests are executed on:
+Browsers tested:
 
-* Chromium
-* Firefox
-* WebKit
+- Chromium
+- Firefox
+- WebKit
+
+---
 
 ## Project Structure
 
-```text
+```
 .
 ├── app/
 ├── components/
-├── public/
 ├── tests/
+├── public/
 ├── backstop_data/
 ├── backstop.json
 ├── playwright.config.ts
+├── package.json
 └── README.md
 ```
 
+---
+
 ## Repository
 
-Repository URL:
+[https://github.com/UlrichDevp/test-photo-journey](https://github.com/UlrichDevp/test-photo-journey)
 
-https://github.com/UlrichDevp/test-photo-journey
+---
+
+## Notes for Reviewers
+
+This project has been designed with a strong focus on:
+
+- Pixel-perfect UI reproduction
+- Cross-browser compatibility
+- Automated testing (visual + E2E)
+- Component modularity and maintainability
+- Production-ready structure
+
+---
+
+## Quick Start — Summary
+
+To run this project from scratch:
+
+```bash
+npm install
+npx puppeteer browsers install chrome
+npm run dev
+npm run backstop:reference
+npm run test:e2e
+```
+
+---
 
 ## Author
 
-SOH NGNEGHAJI ULRICH BOLIVAN
+**SOH NGNEGHAJI ULRICH BOLIVAN**
