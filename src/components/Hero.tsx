@@ -9,7 +9,7 @@ export default function Hero() {
           alt="globe"
           width={0}
           height={0}
-          className="lg:w-[324px] w-[150.02px] h-[150.02px] md:w-[180.71px] lg:h-[324px] md:h-[180.71px]  shadow-[0px_4.42px_8.84px_0px_#0000001A,0px_15.47px_15.47px_0px_#00000017,0px_35.35px_20.99px_0px_#0000000D,0px_62.97px_25.41px_0px_#00000003,0px_98.32px_27.62px_0px_#00000000]"
+          className="lg:w-[324px] w-[150.02px] h-[150.02px] md:w-[180.71px] lg:h-[324px] md:h-[180.71px] rounded-[179.69px] md:rounded-[205.48px] lg:rounded-[368.42px]  shadow-[0px_4.42px_8.84px_0px_#0000001A,0px_15.47px_15.47px_0px_#00000017,0px_35.35px_20.99px_0px_#0000000D,0px_62.97px_25.41px_0px_#00000003,0px_98.32px_27.62px_0px_#00000000]"
         />
         <Image
           src="/image2.png"

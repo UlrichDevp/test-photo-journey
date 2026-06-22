@@ -11,7 +11,7 @@ import ClosingSection from "@/components/ClosingSection";
 
 export default function Home() {
   return (
-    <div>
+    <div className="">
       <Header />
       <Hero/>
       <IntroCard />
