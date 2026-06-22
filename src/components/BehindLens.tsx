@@ -8,7 +8,7 @@ export default function BehindLens() {
             <h1 className="font-title text-[30px] md:text-[40px] lg:text-[50px] leading-[100%] font-medium text-center">Behind The Lens</h1>
             <div className="flex flex-col items-center ">
                 <div className=" flex flex-col lg:flex-row gap-[38px] md:gap-[43px] lg:gap-[55px]">
-                    <div className="lg:h-[258px] bg-gradient-to-r from-[#8F9CD3] to-[#FFCAA4] p-[0.8px] rounded-[9.56px] md:rounded-[20px] ">
+                    <div className="lg:h-[258px] bg-gradient-to-r from-[#8F9CD3] to-[#FFCAA4] p-[0.17px] lg:p-[0.35px] rounded-[9.56px] md:rounded-[20px] ">
                         <div className="lg:h-full flex justify-between items-center px-[12px] md:px-[23px] lg:pr-[24px]  lg:pl-[16px] md:py-[22px] py-[19px] bg-white  rounded-[9.56px] md:rounded-[20px] shadow-[0_4.3px_9.56px_0_#E0E0E01A,0_17.69px_17.69px_0_#E0E0E017,0_39.21px_23.43px_0_#E0E0E00D,0_69.82px_28.21px_0_#E0E0E003,0_109.51px_30.6px_0_#E0E0E000]">
                             <div className="flex flex-col w-[215.6px] md:w-[454px] lg:w-[408px]">
                                 <div className="flex items-center ">
@@ -28,7 +28,7 @@ export default function BehindLens() {
                             <div className=" w-[84px]md:w-[145px] lg:w-[129px]">
                                 {/* image ville bleue */}
                                 <Image
-                                    src="/image32.png"  
+                                    src="/article2.png"  
                                     alt="ville"
                                     width={60}
                                     height={90}

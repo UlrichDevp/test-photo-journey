@@ -8,6 +8,7 @@ import FezSection from "@/components/FezSection"
 import Marrakech from "@/components/MarrakechSection";
 import InstaCard from "@/components/InstagramCards";
 import ClosingSection from "@/components/ClosingSection";
+import RelateArt from "@/components/RelatedArticles"
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <Marrakech />
       <InstaCard />
       <ClosingSection />
+      <RelateArt/>
       <Footer1 />
 
     </div>

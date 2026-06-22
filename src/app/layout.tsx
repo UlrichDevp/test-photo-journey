@@ -40,7 +40,9 @@ export default function RootLayout({
           ${montserrat.variable}
         `}
       >
-        {children}
+        <div className="overflow-x-hidden">
+          {children}
+        </div>
       </body>
     </html>
   );

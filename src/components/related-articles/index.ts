@@ -1,1 +1,1 @@
-export { default as RelatedArticles } from "./RelatedArticles";
+export { default as RelatedArticles } from "../RelatedArticles";
