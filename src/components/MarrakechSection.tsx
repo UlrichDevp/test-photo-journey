@@ -3,7 +3,7 @@
 
 export default function Marrakech() {
     return (
-        <section className="mt-[95px] md:mt-[98px] lg:mt-[216px] ml-[20px] md:ml-[40px] lg:ml-[295px] mr-[15px] md:mr-[40px] lg:mr-[295px] flex flex-col gap-[30px] md:gap-[35px]">
+        <section data-testid="marrakech-section" className="mt-[95px] md:mt-[98px] lg:mt-[216px] ml-[20px] md:ml-[40px] lg:ml-[295px] mr-[15px] md:mr-[40px] lg:mr-[295px] flex flex-col gap-[30px] md:gap-[35px]">
             <h1 className="font-title text-[30px] md:text-[40px] lg:text-[50px] leading-[100%] font-medium md:text-center ">Marrakech: Heat, Motion, and Magic!</h1>
             <div className="text-[#595959] flex flex-col gap-[28px] lg:gap-[30px] lg:mx-[10px]">
                 <div className="font-body  font-normal text-[14px] md:text-[16px] leading-[21px] lg:text-[18px] lg:leading-[27px] tracking-normal ">

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="relative lg:max-w-[1440px] flex flex-col md:flex mx-auto  md:pl-[40px] lg:pl-[75px] pl-[16px] ">
+    <section data-testid="hero" className="relative lg:max-w-[1440px] flex flex-col md:flex mx-auto  md:pl-[40px] lg:pl-[75px] pl-[16px] ">
       <div className="bg-[#EEF3FE] lg:pt-45 md:pt-25 pt-65 pr-25 flex flex-col absolute gap-3 lg:gap-4 justify-center items-center top-[-290px] left-[74px] md:top-[-230.37px] md:left-[540px] lg:top-[-350px] lg:left-[900px] w-[270.06896725634346px] h-[522.4482984440185px] rounded-[243.86px] opacity-100 transform rotate-[-62.98deg] md:rotate-[-24.75deg] lg:rotate-[-18.21deg] md:h-[597.4422691920159px] md:w-[336.2973px] lg:w-[602.9721870899572px] lg:h-[1071.1981540865847px] md:rounded-[278.87px] lg:rounded-[500px]">
         <Image
           src="/image1.svg"

@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function InstaCard() {
     return (
-        <section className="mt-[71px] mx-[15px] md:mx-[42px] lg:mx-[159px] flex flex-col gap-[40px] md:flex-row items-center">
+        <section data-testid="instagram-cards" className="mt-[71px] mx-[15px] md:mx-[42px] lg:mx-[159px] flex flex-col gap-[40px] md:flex-row items-center">
             <div className="flex justify-center">
                 <Image
                     src="/instaimg1.svg"

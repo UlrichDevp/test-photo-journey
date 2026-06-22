@@ -55,6 +55,7 @@ export default function RelatedArticles() {
 
   return (
     <section
+      data-testid="related-articles"
       className="
         mx-auto
         w-full

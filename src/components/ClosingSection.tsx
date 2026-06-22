@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function ClosingSection() {
     return (
-        <section className="mt-[80px] md:mt-[134px] lg:mt-[197px] flex flex-col gap-[23px] md:gap-[30px] lg:gap-[28px] mx-[14px] md:mx-[41px] lg:mx-[315px]">
+        <section data-testid="closing-section" className="mt-[80px] md:mt-[134px] lg:mt-[197px] flex flex-col gap-[23px] md:gap-[30px] lg:gap-[28px] mx-[14px] md:mx-[41px] lg:mx-[315px]">
             <h1 className="md:mx-[53px] lg:mx-[23px] font-title text-[30px] md:text-[40px] lg:text-[50px] leading-[37px] lg:leading-[55px] font-medium text-center">Closing: Morocco as a Photographic Teacher</h1>
             <div className="mx-[29px] md:mx-[75px] lg:mx-0 text-[#595959] font-body font-normal text-[14px] md:text-[16px] leading-[21px] lg:text-[18px] lg:leading-[27px] tracking-normal">
                 <p className="">1)Marrakech is bold: terracotta walls, palm shadows, buzzing souks, and the famous energy of Jemaa el-Fnaa. It’s the city where photography becomes choreography—your timing matters as much as your framing..  What to photograph in Marrakech. Jemaa el-Fnaa: the heartbeat. This square changes constantly. In daylight, it’s open and bright. At sunset, it turns cinematic: smoke from grills rises, lanterns glow, crowds thicken, and the sky shifts into purple-blue. Shoot wide to show scaleShoot tight to isolate gestures: hands serving tea, steam, faces lit by warm bulbs. Try motion blur to show movement (even a slight blur can add energy)</p>

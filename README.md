@@ -1,36 +1,94 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Frontend Technical Test
+
+Implementation of the frontend technical test provided by Yaakyi.
+
+## Tech Stack
+
+* Next.js
+* TypeScript
+* TailwindCSS
+* BackstopJS (visual regression testing)
+* Playwright (end-to-end testing)
+
+## Features
+
+* Pixel-perfect implementation based on the provided Figma design
+* Responsive design (mobile, tablet, desktop)
+* Reusable and maintainable components
+* Visual regression testing with BackstopJS
+* End-to-end testing with Playwright
+
+## Project Structure
+
+* `components/` - Reusable UI components
+* `tests/` - Playwright end-to-end tests
+* `backstop_data/` - BackstopJS visual testing assets
 
 ## Getting Started
 
-First, run the development server:
+### Install dependencies
+
+```bash
+npm install
+```
+
+### Start the development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The application will be available at:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Visual Tests (BackstopJS)
 
-## Learn More
+Generate reference screenshots:
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npx backstop reference
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Run visual regression tests:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+npx backstop test
+```
 
-## Deploy on Vercel
+Approve new visual references:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+npx backstop approve
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## End-to-End Tests (Playwright)
+
+Run all tests:
+
+```bash
+npx playwright test
+```
+
+Open the HTML report:
+
+```bash
+npx playwright show-report
+```
+
+## Notes
+
+This project was developed with a strong focus on:
+
+* Pixel-perfect implementation
+* Code quality and maintainability
+* Responsive behavior
+* Automated UI testing
+
+## Repository
+
+Repository URL:
+
+https://github.com/UlrichDevp/test-photo-journey

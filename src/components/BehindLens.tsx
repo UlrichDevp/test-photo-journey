@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function BehindLens() {
     return (
-        <section className="mb-[8px] mt-[93px] flex flex-col items-center gap-[39px] md:gap-[32px] lg:gap-[72px] mx-[20px] md:mx-[39px] lg:mx-[75px]">
+        <section data-testid="behind-lens" className="mb-[8px] mt-[93px] flex flex-col items-center gap-[39px] md:gap-[32px] lg:gap-[72px] mx-[20px] md:mx-[39px] lg:mx-[75px]">
             <h1 className="font-title text-[30px] md:text-[40px] lg:text-[50px] leading-[100%] font-medium text-center">Behind The Lens</h1>
             <div className="flex flex-col items-center ">
                 <div className=" flex flex-col lg:flex-row gap-[38px] md:gap-[43px] lg:gap-[55px]">

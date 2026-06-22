@@ -4,7 +4,7 @@
     {
       "pair": {
         "reference": "../bitmaps_reference/frontend_test_Homepage_0_document_0_mobile.png",
-        "test": "../bitmaps_test/20260622-153339/frontend_test_Homepage_0_document_0_mobile.png",
+        "test": "../bitmaps_test/20260622-172314/frontend_test_Homepage_0_document_0_mobile.png",
         "selector": "document",
         "fileName": "frontend_test_Homepage_0_document_0_mobile.png",
         "label": "Homepage",
@@ -19,9 +19,7 @@
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 0.09563477881663493,
-          "misMatchPercentage": "0.10",
-          "analysisTime": 1169
+          "misMatchPercentage": "0.00"
         }
       },
       "status": "pass"
@@ -29,7 +27,7 @@
     {
       "pair": {
         "reference": "../bitmaps_reference/frontend_test_Homepage_0_document_1_tablet.png",
-        "test": "../bitmaps_test/20260622-153339/frontend_test_Homepage_0_document_1_tablet.png",
+        "test": "../bitmaps_test/20260622-172314/frontend_test_Homepage_0_document_1_tablet.png",
         "selector": "document",
         "fileName": "frontend_test_Homepage_0_document_1_tablet.png",
         "label": "Homepage",
@@ -52,7 +50,7 @@
     {
       "pair": {
         "reference": "../bitmaps_reference/frontend_test_Homepage_0_document_2_desktop.png",
-        "test": "../bitmaps_test/20260622-153339/frontend_test_Homepage_0_document_2_desktop.png",
+        "test": "../bitmaps_test/20260622-172314/frontend_test_Homepage_0_document_2_desktop.png",
         "selector": "document",
         "fileName": "frontend_test_Homepage_0_document_2_desktop.png",
         "label": "Homepage",
@@ -67,9 +65,7 @@
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 0.0013210423107975014,
-          "misMatchPercentage": "0.00",
-          "analysisTime": 1399
+          "misMatchPercentage": "0.00"
         }
       },
       "status": "pass"

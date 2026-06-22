@@ -115,7 +115,7 @@ function LanguageSelector() {
 
 export default function Footer1() {
     return (
-        <footer className="mt-[106.14px] pt-[63px] md:pt-[106px] lg:[146px] px-[22px]  md:px-[68px] w-full "
+        <footer data-testid="footer" className="mt-[106.14px] pt-[63px] md:pt-[106px] lg:[146px] px-[22px]  md:px-[68px] w-full "
             style={{
                 background:
                     "linear-gradient(310.6deg, #000000 28.25%, #8E97B4 87.82%), linear-gradient(0deg, rgba(0,0,0,0.2), rgba(0,0,0,0.2))",

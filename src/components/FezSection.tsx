@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function FezSection() {
     return (
-        <section className="mt-[66px] md:mt-[100px] lg:mt-0 mx-[21px] md:mx-[82px] lg:mx-[77px] flex flex-col gap-[24px] md:gap-[25px] lg:gap-[28px]">
+        <section data-testid="fez-section" className="mt-[66px] md:mt-[100px] lg:mt-0 mx-[21px] md:mx-[82px] lg:mx-[77px] flex flex-col gap-[24px] md:gap-[25px] lg:gap-[28px]">
             <h1 className="font-title text-[30px] md:text-[40px] lg:text-[50px] leading-[100%] font-medium text-center lg:text-start">Fez: The City of Detail</h1>
             <div className="flex flex-col lg:flex-row lg:gap-0 gap-[73px] md:gap-[56px]">
                 <div className=" text-[#595959] lg:flex-1 lg:pr-[100px]">
