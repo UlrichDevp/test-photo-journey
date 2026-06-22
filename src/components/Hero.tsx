@@ -9,14 +9,14 @@ export default function Hero() {
           alt="globe"
           width={0}
           height={0}
-          className="lg:w-[324px] w-[150.02px] h-[150.02px] md:w-[180.71px] lg:h-[324px] md:h-[180.71px]  "
+          className="lg:w-[324px] w-[150.02px] h-[150.02px] md:w-[180.71px] lg:h-[324px] md:h-[180.71px]  shadow-[0px_4.42px_8.84px_0px_#0000001A,0px_15.47px_15.47px_0px_#00000017,0px_35.35px_20.99px_0px_#0000000D,0px_62.97px_25.41px_0px_#00000003,0px_98.32px_27.62px_0px_#00000000]"
         />
         <Image
           src="/image2.png"
           alt="ville"
           width={0}
           height={0}
-          className="lg:w-[198.86px] w-[96.99px] h-[96.99px] md:w-[110.91px] lg:h-[198.86px] md:h-[110.91px] lg:rounded-[120.52px] md:rounded-[67.22px] rounded-[58.78px]"
+          className="lg:w-[198.86px] w-[96.99px] h-[96.99px] md:w-[110.91px] lg:h-[198.86px] md:h-[110.91px] lg:rounded-[120.52px] md:rounded-[67.22px] rounded-[58.78px] shadow-[0px_4.42px_8.84px_0px_#0000001A,0px_15.47px_15.47px_0px_#00000017,0px_35.35px_20.99px_0px_#0000000D,0px_62.97px_25.41px_0px_#00000003,0px_98.32px_27.62px_0px_#00000000]"
         />
       </div>
       <div className="mt-[193px]  md:w-[72%] lg:w-6/10 md:mt-[32px] lg:mt-[81px] flex flex-col gap-[17px] pr-[16px]">
