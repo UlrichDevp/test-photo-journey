@@ -201,34 +201,42 @@ export default function Footer1() {
                         </div>
                     </div>
                     <div className="mt-[31px] lg:mt-[86px] flex gap-[19.93px] lg:justify-end">
-                        <Image
+                        <a href="#">
+                            <Image
                             src="/insta.svg"
                             alt="instagram"
                             width={0}
                             height={0}
                             className="w-[15.940030097961426px] md:w-[24px] md:h-[24px] lg:w-[26.375px] h-[15.940030097961426px] lg:h-[26.375px] "
                         />
-                        <Image
+                        </a>
+                        <a href="#">
+                            <Image
                             src="/facebook.svg"
                             alt="facebook"
                             width={0}
                             height={0}
                             className="w-[15.940030097961426px] md:w-[24px] md:h-[24px] lg:w-[26.375px] h-[15.940030097961426px] lg:h-[26.375px] "
                         />
-                        <Image
+                        </a>
+                        <a href="#">
+                            <Image
                             src="/linkdn.svg"
                             alt="linkdn"
                             width={0}
                             height={0}
                             className="w-[15.940030097961426px] md:w-[24px] md:h-[24px] lg:w-[26.375px] h-[15.940030097961426px] lg:h-[26.375px] "
                         />
-                        <Image
+                        </a>
+                        <a href="#">
+                            <Image
                             src="/tiktok.svg"
                             alt="tiktok"
                             width={0}
                             height={0}
                             className="w-[15.940030097961426px] md:w-[24px] md:h-[24px] lg:w-[26.375px] h-[15.940030097961426px] lg:h-[26.375px] "
                         />
+                        </a>
                     </div>
                 </div>
                 {/* Quick Links + Contact & Legal for Tablet*/}

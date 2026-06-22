@@ -5,7 +5,7 @@ import { ArrowLeft } from "lucide-react";
 
 export default function Header() {
   return (
-    <header className="sticky top-0 z-50 backdrop-blur-md bg-[#65467240 ]">
+    <header className="sticky top-0 z-50 backdrop-blur-md bg-[#65467240]">
       <div className="w-full lg:max-w-[1440px] h-[80px] md:h-[95px] px-[16px] md:px-[39px] lg:px-[75px] flex items-center justify-between">
         
         {/* Bouton Retour avec l'icône ArrowLeft */}
