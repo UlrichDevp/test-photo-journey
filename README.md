@@ -107,7 +107,8 @@ npm run backstop:test
 npx backstop approve
 ```
 
-**Some test are in ./backstop_data**
+
+**Some tests are in the ./backstop_data  folder**
 
 ---
 
@@ -131,7 +132,8 @@ npm run test:e2e:ui
 npx playwright show-report
 ```
 
-**Some test are in ./test-results**
+
+**Some test are in the  ./test-results folder**
 
 ---
 
