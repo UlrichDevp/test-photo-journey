@@ -107,6 +107,8 @@ npm run backstop:test
 npx backstop approve
 ```
 
+**Some test are in ./backstop_data**
+
 ---
 
 ## End-to-End Testing — Playwright
@@ -128,6 +130,8 @@ npm run test:e2e:ui
 ```bash
 npx playwright show-report
 ```
+
+**Some test are in ./test-results**
 
 ---
 
