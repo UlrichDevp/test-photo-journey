@@ -133,8 +133,6 @@ npx playwright show-report
 ```
 
 
-**Some test are in the  ./test-results folder**
-
 ---
 
 ## Test Coverage
